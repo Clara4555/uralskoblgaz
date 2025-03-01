@@ -1,0 +1,859 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Murecho', sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+/* Top Purple Line */
+.top-bar {
+    width: 100%;
+    height: 5px;
+    background-color: purple;
+}
+
+/* Updated: Flex container for logo and hamburger */
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 3px solid #8A2BE2;
+}
+
+/* Center Logo */
+.center-logo img {
+    width: 200px;
+    height: auto;
+  
+}
+.center-logo{
+    text-align: center;
+    margin: 10px 10px;
+}
+
+
+/* Navbar Styling */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 30px;
+    border-bottom: 3px solid #8A2BE2;
+}
+
+/* Navbar Links */
+.nav-link.nl1 {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav-link.nl1 .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Default Nav Links */
+.nav-link.nl1 a {
+    text-decoration: none;
+    font-size: 12px;
+    color: purple;
+    padding: 8px 15px;
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.3s ease;
+    text-align: center;
+    flex: 1;
+    border-right: 1px solid green;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Smooth Fade Effect */
+.nav-link.nl1 a.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav-link.nl1 a.fade.active {
+    opacity: 1;
+}
+
+/* Underline Animation on Hover */
+.nav-link.nl1 a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 50%;
+    background-color: rgb(18,165,165);
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+/* Expand underline on hover */
+.nav-link.nl1 a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hover Effect */
+.nav-link.nl1 a:hover {
+    background: rgb(18,165,165);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Active Link Styling */
+.nav-link.nl1 a.active {
+    background: rgb(81,178,98);
+    color: white;
+}
+
+/* Remove border from last link */
+.nav-link.nl1 a:last-child {
+    border-right: none;
+}
+
+/* Hamburger Styling */
+.nl3 {
+    align-items: center;
+    gap: 12px;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    display: none;
+    height: fit-content;
+    flex-direction: column;
+    position: relative;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.hamburger .ham-span {
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+/* Active Hamburger */
+.hamburger.active .hs2 {
+    width: 0px;
+}
+
+.hamburger.active .hs1 {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.hamburger.active .hs3 {
+    transform: rotate(-45deg) translateY(-10px);
+}
+/* ✅ Hide mobile nav by default */
+.mobile-nav {
+    display: none;
+}
+
+/* ✅ Mobile Nav: Flex with logo & hamburger */
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid #8A2BE2;
+}
+
+/* ✅ Center logo in mobile */
+.mobile-header .center-logo img {
+    width: 150px;
+}
+
+/* ✅ Mobile menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: purple;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+/* Slider Container */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slide Counter */
+.slide-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+/* Info Section */
+.info-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('./src/assets/images/oil-refinery.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Overlay */
+.info-section .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+/* Content */
+.info-section .content {
+    position: relative;
+    max-width: 800px;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.info-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* New Green Container */
+.info-section .green-container {
+    background-color: #519967;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.info-section .green-container h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info-section .green-container p {
+    font-size: 18px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-section {
+        height: auto;
+        padding: 80px 20px;
+    }
+    
+    .info-section h1 {
+        font-size: 28px;
+    }
+
+    .info-section h2 {
+        font-size: 20px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+    }
+
+    .info-section .green-container h3 {
+        font-size: 18px;
+    }
+
+    .info-section .green-container p {
+        font-size: 16px;
+    }
+}
+/* ABOUT US SECTION */
+.about-us {
+    width: 100%;
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-us h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1E567D; /* Dark blue */
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* Flex container for 3 columns */
+.about-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual items */
+.about-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.about-item h4 {
+    font-size: 22px;
+    color: 4D93B9;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.about-item h4::before, 
+.about-item h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #2CA04E; /* Green */
+    position: absolute;
+    top: 50%;
+}
+
+.about-item h4::before {
+    left: -50px;
+}
+
+.about-item h4::after {
+    right: -50px;
+}
+
+.about-item p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-item h4::before, 
+    .about-item h4::after {
+        width: 30px;
+    }
+}
+/* TWO-COLUMN IMAGE SECTION */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.split-box {
+    flex: 1;
+    min-height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.split-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.split-content {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+    max-width: 80%;
+}
+
+.split-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.split-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.split-content a {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.split-content a:hover {
+    background: white;
+    color: black;
+}
+
+/* Background images */
+.refinery {
+    background-image: url('./src/assets/images/refinery.png');
+}
+
+.processing {
+    background-image: url('./src/assets/images/crude-oil.png');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .split-section {
+        flex-direction: column;
+    }
+
+    .split-box {
+        width: 100%;
+        min-height: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-us h2 {
+        font-size: 26px;
+    }
+
+    .about-us p {
+        font-size: 14px;
+    }
+
+    .about-item h4 {
+        font-size: 18px;
+    }
+
+    .about-item p {
+        font-size: 14px;
+    }
+}
+/* TWO-COLUMN TEXT & IMAGE SECTION */
+.fuel-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 5%;
+}
+
+.fuel-image {
+    flex: 1;
+    min-width: 40%;
+}
+
+.fuel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fuel-content {
+    flex: 1;
+    min-width: 50%;
+    padding-left: 40px;
+}
+
+.fuel-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fuel-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fuel-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .fuel-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+/* Tabs */
+.tab-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.tab {
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.tab.active {
+    border-bottom: 3px solid black;
+}
+
+/* Content Layout */
+.content-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Content Sections */
+.content {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Show Active Content */
+.content.active {
+    display: flex;
+}
+
+/* Left Section (Image) */
+.left-section {
+    width: 30%;
+}
+
+.left-section img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Middle Section (Text) */
+.middle-section {
+    width: 35%;
+}
+
+.middle-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.middle-section p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.middle-section a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Right Section (Text) */
+.right-section {
+    width: 30%;
+}
+
+.right-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.right-section ul {
+    margin-top: 10px;
+}
+
+.right-section ul li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.section {
+    width: fit-content; 
+    max-width: 1000px; 
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+    padding: 20px 0;
+}
+
+
+/* Responsive for Smaller Screens */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .left-section, .middle-section, .right-section {
+        width: 100%;
+    }
+
+    .tab-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        padding: 10px;
+    }
+}
+
+
+/* ✅ Show only on smaller screens */
+@media screen and (max-width: 900px) {
+    .large-screen {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+    .nav-header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .center-logo img {
+        width: 180px;
+    }
+
+    .nav-link.nl1 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: white;
+        box-shadow: 0 6px 5px rgba(153, 153, 153, 0.548);
+        padding: 20px;
+        width: 100%;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        border-top: 1px solid grey;
+    }
+
+    .nl1.active {
+        transform: translateX(0%);
+    }
+
+    .nl1 div {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-link.nl1 {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nl1 {
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 6px 5px rgba(153, 153, 153, 0.548);
+        top: 80px;
+        padding: 50px 20px;
+        gap: 30px;
+        width: 100%;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        border-top: 1px solid grey;
+    }
+
+    .nl1.active {
+        transform: translateX(0%);
+        left: 0px;
+    }
+
+    .nl1 div {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .nl1 .nl-first {
+        gap: 20px;
+    }
+
+    .nl3 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 690px) {
+}
+
+@media screen and (max-width: 500px) {
+}

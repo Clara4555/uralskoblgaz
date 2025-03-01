@@ -1,0 +1,304 @@
+element.style {
+}
+a, abbr, acronym, address, applet, b, big, blockquote, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    --scrollbar-width: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+:root, :host, .spxThemeOverride, .max-width-container {
+    --color_0: 255, 255, 255;
+    --color_1: 0, 0, 0;
+    --color_2: 231, 29, 29;
+    --color_3: 25, 25, 25;
+    --color_4: 250, 247, 232;
+    --color_5: 255, 208, 78;
+    --color_6: 255, 255, 255;
+    --color_7: 191, 191, 191;
+    --color_8: 128, 128, 128;
+    --color_9: 64, 64, 64;
+    --color_10: 0, 0, 0;
+    --color_11: 255, 255, 255;
+    --color_12: 250, 247, 232;
+    --color_13: 148, 148, 148;
+    --color_14: 25, 25, 25;
+    --color_15: 0, 0, 0;
+    --color_16: 247, 180, 180;
+    --color_17: 239, 104, 104;
+    --color_18: 231, 29, 29;
+    --color_19: 157, 17, 17;
+    --color_20: 78, 8, 8;
+    --color_21: 209, 209, 209;
+    --color_22: 163, 163, 163;
+    --color_23: 117, 117, 117;
+    --color_24: 71, 71, 71;
+    --color_25: 25, 25, 25;
+    --color_26: 253, 251, 243;
+    --color_27: 250, 247, 232;
+    --color_28: 228, 213, 133;
+    --color_29: 198, 172, 43;
+    --color_30: 99, 86, 22;
+    --color_31: 255, 232, 166;
+    --color_32: 255, 208, 78;
+    --color_33: 250, 183, 0;
+    --color_34: 167, 122, 0;
+    --color_35: 83, 61, 0;
+    --color_36: 255, 255, 255;
+    --color_37: 0, 0, 0;
+    --color_38: 250, 247, 232;
+    --color_39: 148, 148, 148;
+    --color_40: 25, 25, 25;
+    --color_41: 231, 29, 29;
+    --color_42: 0, 0, 0;
+    --color_43: 128, 128, 128;
+    --color_44: 255, 255, 255;
+    --color_45: 0, 0, 0;
+    --color_46: 0, 0, 0;
+    --color_47: 25, 25, 25;
+    --color_48: 231, 29, 29;
+    --color_49: 231, 29, 29;
+
+}
+:root {
+    --wst-button-color-fill-primary: rgb(var(--color_48));
+    --wst-button-color-border-primary: rgb(var(--color_49));
+    --wst-button-color-text-primary: rgb(var(--color_50));
+    --wst-button-color-fill-primary-hover: rgb(var(--color_51));
+    --wst-button-color-border-primary-hover: rgb(var(--color_52));
+    --wst-button-color-text-primary-hover: rgb(var(--color_53));
+    --wst-button-color-fill-primary-disabled: rgb(var(--color_54));
+    --wst-button-color-border-primary-disabled: rgb(var(--color_55));
+    --wst-button-color-text-primary-disabled: rgb(var(--color_56));
+    --wst-button-color-fill-secondary: rgb(var(--color_57));
+    --wst-button-color-border-secondary: rgb(var(--color_58));
+    --wst-button-color-text-secondary: rgb(var(--color_59));
+    --wst-button-color-fill-secondary-hover: rgb(var(--color_60));
+    --wst-button-color-border-secondary-hover: rgb(var(--color_61));
+    --wst-button-color-text-secondary-hover: rgb(var(--color_62));
+    --wst-button-color-fill-secondary-disabled: rgb(var(--color_63));
+    --wst-button-color-border-secondary-disabled: rgb(var(--color_64));
+    --wst-button-color-text-secondary-disabled: rgb(var(--color_65));
+    --wst-color-fill-base-1: rgb(var(--color_36));
+    --wst-color-fill-base-2: rgb(var(--color_37));
+    --wst-color-fill-base-shade-1: rgb(var(--color_38));
+    --wst-color-fill-base-shade-2: rgb(var(--color_39));
+    --wst-color-fill-base-shade-3: rgb(var(--color_40));
+    --wst-color-fill-accent-1: rgb(var(--color_41));
+    --wst-color-fill-accent-2: rgb(var(--color_42));
+    --wst-color-fill-accent-3: rgb(var(--color_43));
+    --wst-color-fill-accent-4: rgb(var(--color_44));
+    --wst-color-fill-background-primary: rgb(var(--color_11));
+    --wst-color-fill-background-secondary: rgb(var(--color_12));
+    --wst-color-text-primary: rgb(var(--color_15));
+    --wst-color-text-secondary: rgb(var(--color_14));
+    --wst-color-action: rgb(var(--color_18));
+    --wst-color-disabled: rgb(var(--color_39));
+    --wst-color-title: rgb(var(--color_45));
+    --wst-color-subtitle: rgb(var(--color_46));
+    --wst-color-line: rgb(var(--color_47));
+    --wst-font-style-h2: var(--font_2);
+    --wst-font-style-h3: var(--font_3);
+    --wst-font-style-h4: var(--font_4);
+    --wst-font-style-h5: var(--font_5);
+    --wst-font-style-h6: var(--font_6);
+    --wst-font-style-body-large: var(--font_7);
+    --wst-font-style-body-medium: var(--font_8);
+    --wst-font-style-body-small: var(--font_9);
+    --wst-font-style-body-x-small: var(--font_10);
+    --wst-color-custom-1: rgb(var(--color_13));
+    --wst-color-custom-2: rgb(var(--color_16));
+    --wst-color-custom-3: rgb(var(--color_17));
+    --wst-color-custom-4: rgb(var(--color_19));
+    --wst-color-custom-5: rgb(var(--color_20));
+    --wst-color-custom-6: rgb(var(--color_21));
+    --wst-color-custom-7: rgb(var(--color_22));
+    --wst-color-custom-8: rgb(var(--color_23));
+    --wst-color-custom-9: rgb(var(--color_24));
+    --wst-color-custom-10: rgb(var(--color_25));
+    --wst-color-custom-11: rgb(var(--color_26));
+    --wst-color-custom-12: rgb(var(--color_27));
+    --wst-color-custom-13: rgb(var(--color_28));
+    --wst-color-custom-14: rgb(var(--color_29));
+    --wst-color-custom-15: rgb(var(--color_30));
+    --wst-color-custom-16: rgb(var(--color_31));
+    --wst-color-custom-17: rgb(var(--color_32));
+    --wst-color-custom-18: rgb(var(--color_33));
+    --wst-color-custom-19: rgb(var(--color_34));
+    --wst-color-custom-20: rgb(var(--color_35));
+}
+@supports (container-type:inline-size) {
+    :root {
+        --one-unit: 1cqw;
+    }
+}
+:root {
+    --one-unit: 1vw;
+    --section-max-width: 9999px;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* Top Purple Line */
+.top-bar {
+  width: 100%;
+  height: 5px;
+  background-color: purple;
+}
+
+/* Center Logo */
+.center-logo {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.center-logo img {
+  width: 260px;
+  height: auto;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 30px;
+  border-bottom: 3px solid #8A2BE2;
+}
+
+/* Navbar Wrapper */
+nav .navbar-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the navigation */
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  padding: 10px 40px; /* Adds space inside the container */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 80%; /* Optional: Adjust width */
+  margin: 0 auto; /* Centers the navbar */
+  
+}
+nav .navbar-wrapper a{
+  gap: 20%;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+
+
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  width: 100%;
+}
+
+/* Navigation Links */
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: purple;
+  background: rgba(22, 149, 160, 0.8);
+  padding: 15px 25px;
+  border-radius: 0; /* Removes rounded corners */
+  text-align: center;
+  transition: background 0.3s;
+  flex: 1; /* Makes each link take equal space */
+  text-align: center;
+  border-right: 1px solid red; /* Adds vertical separator */
+}
+
+/* Remove border from last link */
+nav a:last-child {
+  border-right: none;
+}
+
+/* Active link style */
+nav a.active {
+  background: linear-gradient(to right, #4CAF50, #2E7D32); /* Green gradient */
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Fix */
+
+
+/* Left and Right Logos */
+.left-logos, .right-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-logos img,
+.right-logos img {
+  height: 65px;
+  object-fit: contain;
+}
+
+/* Mobile Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .navbar-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .left-logos, .right-logos {
+      justify-content: center;
+  }
+  
+  .hamburger {
+      display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  nav a:nth-child(-n+3) {
+    display: none;
+  }
+}
