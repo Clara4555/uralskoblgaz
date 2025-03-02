@@ -8,72 +8,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="re.css">
+    <link rel="stylesheet" href="./src/styles/home.css">
+    <link rel="stylesheet" href="./src/styles/navbar.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="top-bar"></div>
-
-    <!-- ✅ Desktop Center Logo (Remains Unchanged) -->
-    <div class="center-logo large-screen">
-        <img src="/src/assets/images/Ural1-logo.png" alt="UralskOblgaz">
-    </div>
-
-    <header class="navbar-container">
-        <div class="left-logos">
-            <img src="/src/assets/images/piccture-1.png" alt="Ministry of Energy">
-            <img src="https://static.wixstatic.com/media/8dc553_3692b39ed83a4250b027a558e0c6f5b2~mv2.jpg/v1/fill/w_60,h_59,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1_logo_SK_edited.jpg" alt="Organization Logo">
+    <div class="navbar-content">
+        <div class="mobile">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>   
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item mobile-item itemi">Home</a></li>
+                    <li><a href="#" class="nav-item mobile-item itemii active">About</a></li> <!-- Active Link -->
+                    <li class="dropdown">
+                        <a href="#" class="nav-item mobile-item itemiii">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Service 1</a></li>
+                            <li><a href="#">Service 2</a></li>
+                            <li><a href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-item mobile-item itemiv">Inventory</a></li>
+                    <li><a href="#" class="nav-item mobile-item itemv">Sustainability</a></li>
+                    <li><a href="#" class="nav-item mobile-item itemvi">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-option">
+                <img class="mobile-logo" src="./src/assets/images/Ural1-logo.png" alt="">
+            <div class="logo-mobile">
+                <img src="./src/assets/images/piccture-1.png" alt="Logo 1">
+                <img src="./src/assets/images/picture-2.png" alt="Logo 2">
+            </div>
+            <div class="logo-mobile">
+                <img class="iii" src="./src/assets/images/picture-3.png" alt="Logo 1">
+                <img src="./src/assets/images/picture-4.png" alt="Logo 2">
+            </div>
+            </div>
+            <div class="blue-div"></div>
         </div>
-
-        <nav class="nav-link nl1">
-            <div class="nl-first navbar-wrapper">
-                <a href="Home.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="./src/pages/services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="./src/pages/sustainability.html">Login</a>
-                <a href="./src/pages/contact.html">Register</a>
+        <!-- Top Navbar -->
+        <nav class="top-nav">
+            <div class="logo-container">
+                <img class="i" src="./src/assets/images/piccture-1.png" alt="Logo 1">
+                <img class="ii" src="./src/assets/images/picture-2.png" alt="Logo 2">
+            </div>
+    
+            <div class="main-main">
+                <img class="main-logo" src="./src/assets/images/Ural1-logo.png" alt="">
+                <!-- Navigation Links -->
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-item itemi">Home</a></li>
+                        <li><a href="#" class="nav-item itemii active">About</a></li> <!-- Active Link -->
+                        <li class="dropdown">
+                            <a href="#" class="nav-item mobile-item itemiii">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Service 1</a></li>
+                                <li><a href="#">Service 2</a></li>
+                                <li><a href="#">Service 3</a></li>
+                            </ul>
+                        </li>                    <li><a href="#" class="nav-item itemiv">Inventory</a></li>
+                        <li><a href="#" class="nav-item itemv">Sustainability</a></li>
+                        <li><a href="#" class="nav-item itemvi">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="logo-container">
+                <img class="i" src="./src/assets/images/picture-3.png" alt="Logo 3">
+                <img class="ii" src="./src/assets/images/picture-4.png" alt="Logo 4">
             </div>
         </nav>
-
-        <div class="nl-sec">
-            <div class="right-logos">
-                <img src="https://static.wixstatic.com/media/8dc553_cfbd86b639c94b82a9cdc16a918010cc~mv2.jpeg/v1/fill/w_103,h_72,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/images.jpeg" alt="KazEnergy">
-                <img src="https://static.wixstatic.com/media/8dc553_30a5a5de27d9438fa8cd2063ce7a7d7c~mv2.png/v1/fill/w_139,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tosoil_logo-1.png" alt="Government Logo">
-            </div>
-        </div>
-
-        <div class="nav-link nl3">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span class="ham-span hs1"></span>
-                <span class="ham-span hs2"></span>
-                <span class="ham-span hs3"></span>
-            </div>
-        </div>
-    </header>
-
-    <!-- ✅ Mobile Nav (Logo + Hamburger on same line) -->
-    <div class="mobile-nav">
-        <div class="mobile-header">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span class="ham-span hs1"></span>
-                <span class="ham-span hs2"></span>
-                <span class="ham-span hs3"></span>
-            </div>
-            <div class="center-logo">
-                <img src="/src/assets/images/Ural1-logo.png" alt="UralskOblgaz">
-            </div>
-        </div>
-        <nav class="mobile-menu">
-            <a href="Home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-            <a href="sign-up.html">Register</a>
-        </nav>
+        <div class="blue-div"></div>
     </div>
+
 
     <div class="slider-container">
         <div class="slider">
