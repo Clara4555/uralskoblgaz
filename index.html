@@ -13,252 +13,291 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="top-bar"></div>
-
-    <!-- ✅ Desktop Center Logo (Remains Unchanged) -->
-    <div class="center-logo large-screen">
-        <img src="/src/assets/images/Ural1-logo.png" alt="UralskOblgaz">
-    </div>
-
-    <header class="navbar-container">
-        <div class="left-logos">
-            <img src="/src/assets/images/piccture-1.png" alt="Ministry of Energy">
-            <img src="https://static.wixstatic.com/media/8dc553_3692b39ed83a4250b027a558e0c6f5b2~mv2.jpg/v1/fill/w_60,h_59,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1_logo_SK_edited.jpg" alt="Organization Logo">
+    <div class="navbar-content">
+        <div class="mobile">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>   
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item mobile-item itemi">Home</a></li>
+                    <li><a href="#" class="nav-item mobile-item itemii active">About</a></li> <!-- Active Link -->
+                    <li class="dropdown">
+                        <a href="#" class="nav-item mobile-item itemiii">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Service 1</a></li>
+                            <li><a href="#">Service 2</a></li>
+                            <li><a href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-item mobile-item itemiv">Inventory</a></li>
+                    <li><a href="#" class="nav-item mobile-item itemv">Sustainability</a></li>
+                    <li><a href="#" class="nav-item mobile-item itemvi">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-option">
+                <img class="mobile-logo" src="./src/assets/images/Ural1-logo.png" alt="">
+            <div class="logo-mobile">
+                <img src="./src/assets/images/piccture-1.png" alt="Logo 1">
+                <img src="./src/assets/images/picture-2.png" alt="Logo 2">
+            </div>
+            <div class="logo-mobile">
+                <img class="iii" src="./src/assets/images/picture-3.png" alt="Logo 1">
+                <img src="./src/assets/images/picture-4.png" alt="Logo 2">
+            </div>
+            </div>
+            <div class="blue-div"></div>
         </div>
-
-        <nav class="nav-link nl1">
-            <div class="nl-first navbar-wrapper">
-                <a href="Home.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="./src/pages/services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="./src/pages/sustainability.html">Login</a>
-                <a href="./src/pages/contact.html">Register</a>
+        <!-- Top Navbar -->
+        <nav class="top-nav">
+            <div class="logo-container">
+                <img class="i" src="./src/assets/images/piccture-1.png" alt="Logo 1">
+                <img class="ii" src="./src/assets/images/picture-2.png" alt="Logo 2">
+            </div>
+    
+            <div class="main-main">
+                <img class="main-logo" src="./src/assets/images/Ural1-logo.png" alt="">
+                <!-- Navigation Links -->
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-item itemi">Home</a></li>
+                        <li><a href="#" class="nav-item itemii active">About</a></li> <!-- Active Link -->
+                        <li class="dropdown">
+                            <a href="#" class="nav-item mobile-item itemiii">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Service 1</a></li>
+                                <li><a href="#">Service 2</a></li>
+                                <li><a href="#">Service 3</a></li>
+                            </ul>
+                        </li>                    <li><a href="#" class="nav-item itemiv">Inventory</a></li>
+                        <li><a href="#" class="nav-item itemv">Sustainability</a></li>
+                        <li><a href="#" class="nav-item itemvi">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="logo-container">
+                <img class="i" src="./src/assets/images/picture-3.png" alt="Logo 3">
+                <img class="ii" src="./src/assets/images/picture-4.png" alt="Logo 4">
             </div>
         </nav>
-
-        <div class="nl-sec">
-            <div class="right-logos">
-                <img src="https://static.wixstatic.com/media/8dc553_cfbd86b639c94b82a9cdc16a918010cc~mv2.jpeg/v1/fill/w_103,h_72,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/images.jpeg" alt="KazEnergy">
-                <img src="https://static.wixstatic.com/media/8dc553_30a5a5de27d9438fa8cd2063ce7a7d7c~mv2.png/v1/fill/w_139,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tosoil_logo-1.png" alt="Government Logo">
+        <div class="blue-div"></div>
+    </div>
+    <div class="body-content">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="./src/assets/images/slider-1.png" class="slide active">
+                <img src="./src/assets/images/slider-2.png" class="slide">
+                <img src="./src/assets/images/slider-3.png" class="slide">
+                <img src="./src//assets/images/slider-4.png" class="slide">
+            </div>
+    
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+    
+            <!-- Slide Counter -->
+            <div class="slide-counter">
+                <span id="counter">1</span>/4
             </div>
         </div>
-
-        <div class="nav-link nl3">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span class="ham-span hs1"></span>
-                <span class="ham-span hs2"></span>
-                <span class="ham-span hs3"></span>
+        <section class="info-section">
+            <div class="content">
+                <h1>Uralskoblgaz Oil Refinery</h1>
+                <h2>Energy Exploration for oil and gas</h2>
+                <p>
+                    Oil and gas are essential for meeting the world's energy needs.
+                    Existing fields eventually become depleted and produce less oil and gas over time, 
+                    so to continue meeting demand, we must continually search for new sources.
+                </p>
+                <p>
+                    Even as we move towards a carbon-neutral future, the world still needs predictable, secure, 
+                    and stable energy supplies as the energy transition progresses. 
+                    Exploration is vital to ensuring that continuity of supply.
+                </p>
+            </div>
+        
+            <div class="green-container">
+                <h3>Uralskoblgaz Oil Refinery is an enterprise of the oil and gas industry in Kazakhstan.</h3>
+                <p>
+                    The company conducts large-scale exploration works on the territory of Kazakhstan, being one of the largest employers of the region. Uralskoblgaz oil refinery, located in Kazakhstan, processes 21 out of 24 grades of crude oil and 15 different petroleum products. We’re proud of the high-quality products created by the hardworking people at our refinery. We provide a variety of products to fit the needs of our customers, including lubricants, base oils, extracts, resins, solvents, waxes and fuels.
+                </p>
+            </div>
+        </section>
+        <!-- ABOUT US SECTION -->
+        <section class="about-us">
+            <h2>ABOUT US</h2>
+            <p><strong>We are the best in interactively and providing full range of oil and gas production.</strong></p>
+            <p>Successful strategy implementation makes it possible to ensure high profits for the shareholders and investors of the company.</p>
+        
+            <div class="flex-mission-goals">
+                <div class="green-div"></div>
+                <h2>Mission</h2>
+                <div class="green-div"></div>
+                <h2>Goals</h2>
+                <div class="green-div"></div>
+                <h2>Strategy</h2>
+                <div class="green-div"></div>
+            </div>
+            <div class="about-grid">
+                <!-- Mission -->
+                <div class="about-item">
+                    <p>The refinery meets the Republic of Kazakhstan’s entire demand for petroleum products and exports the remaining 45%.</p>
+                </div>
+        
+                <!-- Goals -->
+                <div class="about-item">
+                    <p>The petroleum products processed at the plant include automotive gasoline, aviation kerosene, diesel fuel, black oil, petroleum coke, and others.</p>
+                </div>
+        
+                <!-- Strategy -->
+                <div class="about-item">
+                    <p>The modernization of the oil refinery is being carried out in three phases, with the first phase commenced production in December 2018.</p>
+                </div>
+            </div>
+        </section>
+    <!-- SPLIT IMAGE SECTION -->
+    <section class="split-section">
+        <!-- LEFT - Refinery -->
+        <div class="split-box refinery">
+            <div class="split-content">
+                <h2>Heydar Aliyev Oil Refinery</h2>
+                <p>We have since continued to grow, specializing in efficient oil, alternative fuels, and lubricant deliveries across Azerbaijan.</p>
+                <a href="#">More About</a>
             </div>
         </div>
-    </header>
-
-    <!-- ✅ Mobile Nav (Logo + Hamburger on same line) -->
-    <div class="mobile-nav">
-        <div class="mobile-header">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span class="ham-span hs1"></span>
-                <span class="ham-span hs2"></span>
-                <span class="ham-span hs3"></span>
-            </div>
-            <div class="center-logo">
-                <img src="/src/assets/images/Ural1-logo.png" alt="UralskOblgaz">
+    
+        <!-- RIGHT - Crude Oil Processing -->
+        <div class="split-box processing">
+            <div class="split-content">
+                <h2>Crude Oil Processing Technologies</h2>
+                <p>Providing a technology portfolio to introduce new solutions into refineries, optimizing processes and increasing ROI.</p>
+                <a href="#">Our Services</a>
             </div>
         </div>
-        <nav class="mobile-menu">
-            <a href="Home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-            <a href="sign-up.html">Register</a>
-        </nav>
-    </div>
-
-    <div class="slider-container">
-        <div class="slider">
-            <img src="./src/assets/images/slider-1.png" class="slide active">
-            <img src="./src/assets/images/slider-2.png" class="slide">
-            <img src="./src/assets/images/slider-3.png" class="slide">
-            <img src="./src//assets/images/slider-4.png" class="slide">
+    </section>
+    <!-- FUEL SERVICES SECTION -->
+    <section class="fuel-section">
+        <!-- Left Image -->
+        <div class="fuel-image">
+            <img src="./src/assets/images/fuels.png" alt="Oil Rig with Kazakhstan Flag">
         </div>
-
-        <!-- Navigation Arrows -->
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
-
-        <!-- Slide Counter -->
-        <div class="slide-counter">
-            <span id="counter">1</span>/4
-        </div>
-    </div>
-     <!-- New Section -->
-    <!-- New Section -->
-<section class="info-section">
-    <div class="overlay"></div>
-    <div class="content">
-        <h1>Uralskoblgaz Oil Refinery</h1>
-        <h2>Energy Exploration for oil and gas</h2>
-        <p>
-            Oil and gas are essential for meeting the world's energy needs.
-            Existing fields eventually become depleted and produce less oil and gas over time, 
-            so to continue meeting demand, we must continually search for new sources.
-        </p>
-        <p>
-            Even as we move towards a carbon-neutral future, the world still needs predictable, secure, 
-            and stable energy supplies as the energy transition progresses. 
-            Exploration is vital to ensuring that continuity of supply.
-        </p>
-    </div>
-
-    <div class="green-container">
-        <h3>Uralskoblgaz Oil Refinery is an enterprise of the oil and gas industry in Kazakhstan.</h3>
-        <p>
-            The company conducts large-scale exploration works on the territory of Kazakhstan, 
-            being one of the largest employers of the region. Uralskoblgaz oil refinery, located in Kazakhstan, 
-            processes 21 out of 24 grades of crude oil and 15 different petroleum products.
-        </p>
-    </div>
-</section>
-<!-- ABOUT US SECTION -->
-<section class="about-us">
-    <h2>ABOUT US</h2>
-    <p><strong>We are the best in interactively and providing full range of oil and gas production.</strong></p>
-    <p>Successful strategy implementation makes it possible to ensure high profits for the shareholders and investors of the company.</p>
-
-    <div class="about-grid">
-        <!-- Mission -->
-        <div class="about-item">
-            <h4>Mission</h4>
-            <p>The refinery meets the Republic of Kazakhstan’s entire demand for petroleum products and exports the remaining 45%.</p>
-        </div>
-
-        <!-- Goals -->
-        <div class="about-item">
-            <h4>Goals</h4>
-            <p>The petroleum products processed at the plant include automotive gasoline, aviation kerosene, diesel fuel, black oil, petroleum coke, and others.</p>
-        </div>
-
-        <!-- Strategy -->
-        <div class="about-item">
-            <h4>Strategy</h4>
-            <p>The modernization of the oil refinery is being carried out in three phases, with the first phase commenced production in December 2018.</p>
-        </div>
-    </div>
-</section>
-<!-- SPLIT IMAGE SECTION -->
-<section class="split-section">
-    <!-- LEFT - Refinery -->
-    <div class="split-box refinery">
-        <div class="split-content">
-            <h2>Heydar Aliyev Oil Refinery</h2>
-            <p>We have since continued to grow, specializing in efficient oil, alternative fuels, and lubricant deliveries across Azerbaijan.</p>
-            <a href="#">More About</a>
-        </div>
-    </div>
-
-    <!-- RIGHT - Crude Oil Processing -->
-    <div class="split-box processing">
-        <div class="split-content">
-            <h2>Crude Oil Processing Technologies</h2>
-            <p>Providing a technology portfolio to introduce new solutions into refineries, optimizing processes and increasing ROI.</p>
-            <a href="#">Our Services</a>
-        </div>
-    </div>
-</section>
-<!-- FUEL SERVICES SECTION -->
-<section class="fuel-section">
-    <!-- Left Image -->
-    <div class="fuel-image">
-        <img src="./src/assets/images/fuels.png" alt="Oil Rig with Kazakhstan Flag">
-    </div>
-
-    <!-- Right Content -->
-    <div class="fuel-content">
-        <h2>Range of Fuels & Lubricants Services</h2>
-        <p>
-            Here at Uralskoblgaz Oil Refinery, we understand that supplying a wide range of fuels and lubricants isn’t where the hard work starts and ends.
-            Safe storage and maintenance are paramount in getting the most out of your products and avoiding unnecessary costs.
-            That’s why we offer an array of fuel-related services to supplement our supply capabilities.
-        </p>
-    </div>
-</section>
- <!-- Tabs -->
- <div class="tab-container">
-    <span class="tab active" data-target="exploration">Our Exploration</span>
-    <span class="tab" data-target="services">Our Services</span>
-    <span class="tab" data-target="values">Our Values</span>
-</div>
-
-<!-- Main Content -->
- <div class="section">
-<div class="content-container">
-
-    <!-- Exploration Section (Default Active) -->
-    <div class="content active" id="exploration">
-        <div class="left-section">
-            <img src="exploration-image.jpg" alt="Exploration Image">
-        </div>
-        <div class="middle-section">
-            <h2>Environmental Protection</h2>
-            <p>Policy in the field of environmental protection, which conforms to international standards ISO 9001, ISO 14001, OHSAS 18001...</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="right-section">
-            <h2>The electrical desalting plant is produced from oil following products:</h2>
-            <ul>
-                <li>naphtha;</li>
-                <li>component of diesel fuel;</li>
-                <li>fuel oil;</li>
-                <li>hydrocarbon gas.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <div class="content" id="services">
-        <div class="left-section">
-            <img src="services-image.jpg" alt="Services Image">
-        </div>
-        <div class="middle-section">
+    
+        <!-- Right Content -->
+        <div class="fuel-content">
             <h2>Range of Fuels & Lubricants Services</h2>
-            <p>We offer an array of fuel-related services to supplement our supply capabilities, ensuring safe storage and maintenance...</p>
-            <a href="#">Learn More</a>
+            <p>
+                Here at Uralskoblgaz Oil Refinery, we understand that supplying a wide range of fuels and lubricants isn’t where the hard work starts and ends.
+                Safe storage and maintenance are paramount in getting the most out of your products and avoiding unnecessary costs.
+                That’s why we offer an array of fuel-related services to supplement our supply capabilities.
+            </p>
         </div>
-        <div class="right-section">
-            <h2>Our services include:</h2>
-            <ul>
-                <li>Fuel storage solutions;</li>
-                <li>Lubricants supply chain management;</li>
-                <li>Technical support and safety measures.</li>
-            </ul>
-        </div>
+    </section>
+     <!-- Tabs -->
+     <div class="tab-container">
+        <span class="tab active" data-target="exploration">Our Exploration</span>
+        <span class="tab" data-target="services">Our Services</span>
+        <span class="tab" data-target="values">Our Values</span>
     </div>
-
-    <!-- Values Section -->
-    <div class="content" id="values">
-        <div class="left-section">
-            <img src="values-image.jpg" alt="Values Image">
+    
+    <!-- Main Content -->
+     <div class="section">
+    <div class="content-container">
+    
+        <!-- Exploration Section (Default Active) -->
+        <div class="content active" id="exploration">
+            <div class="left-section">
+                <img src="exploration-image.jpg" alt="Exploration Image">
+            </div>
+            <div class="middle-section">
+                <h2>Environmental Protection</h2>
+                <p>Policy in the field of environmental protection, which conforms to international standards ISO 9001, ISO 14001, OHSAS 18001...</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="right-section">
+                <h2>The electrical desalting plant is produced from oil following products:</h2>
+                <ul>
+                    <li>naphtha;</li>
+                    <li>component of diesel fuel;</li>
+                    <li>fuel oil;</li>
+                    <li>hydrocarbon gas.</li>
+                </ul>
+            </div>
         </div>
-        <div class="middle-section">
-            <h2>Our Core Values</h2>
-            <p>Integrity, innovation, and sustainability are at the core of our business, ensuring responsible fuel extraction and refinement...</p>
-            <a href="#">Learn More</a>
+    
+        <!-- Services Section -->
+        <div class="content" id="services">
+            <div class="left-section">
+                <img src="services-image.jpg" alt="Services Image">
+            </div>
+            <div class="middle-section">
+                <h2>Range of Fuels & Lubricants Services</h2>
+                <p>We offer an array of fuel-related services to supplement our supply capabilities, ensuring safe storage and maintenance...</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="right-section">
+                <h2>Our services include:</h2>
+                <ul>
+                    <li>Fuel storage solutions;</li>
+                    <li>Lubricants supply chain management;</li>
+                    <li>Technical support and safety measures.</li>
+                </ul>
+            </div>
         </div>
-        <div class="right-section">
-            <h2>We prioritize:</h2>
-            <ul>
-                <li>Environmental sustainability;</li>
-                <li>Workplace safety and ethics;</li>
-                <li>Efficiency in energy use.</li>
-            </ul>
+    
+        <!-- Values Section -->
+        <div class="content" id="values">
+            <div class="left-section">
+                <img src="values-image.jpg" alt="Values Image">
+            </div>
+            <div class="middle-section">
+                <h2>Our Core Values</h2>
+                <p>Integrity, innovation, and sustainability are at the core of our business, ensuring responsible fuel extraction and refinement...</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="right-section">
+                <h2>We prioritize:</h2>
+                <ul>
+                    <li>Environmental sustainability;</li>
+                    <li>Workplace safety and ethics;</li>
+                    <li>Efficiency in energy use.</li>
+                </ul>
+            </div>
         </div>
+    
     </div>
+     </div>
+    
+    
+    </div>
+    <script src="/srib.js">
+    </script>
+    <script>
+        // JavaScript to toggle active class dynamically
+        document.querySelectorAll(".nav-item").forEach(link => {
+            link.addEventListener("click", function() {
+                document.querySelectorAll(".nav-item").forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
 
-</div>
- </div>
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
 
-
-    <script src="/srib.js"></script>
+        document.querySelectorAll(".nav-item").forEach(link => {
+            link.addEventListener("click", function () {
+                document.querySelectorAll(".nav-item").forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+                navLinks.classList.remove("active"); 
+            });
+        });
+        });
+    </script>
 </body>
 </html>
