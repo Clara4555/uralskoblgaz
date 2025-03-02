@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./src/styles/home.css">
     <link rel="stylesheet" href="./src/styles/navbar.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/global.css">    
     <title>Document</title>
 </head>
 <body>
@@ -266,11 +268,70 @@
             </ul>
         </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            
+            <!-- Left Section - Logo & Description -->
+            <div class="footer-logo">
+                <img src="./src/assets/images/Ural1-logo.png" alt="Uralskoblgaz Logo">
+                <p>Comprehensive Energy Solutions from Uralskoblgaz TOO Petroleum Kazakhstan</p>
+                <p>© 2023 - Uralskoblgaz Oil Refinery, TOO - All rights reserved.</p>
+            </div>
 
+            <!-- Middle Section - Useful Links -->
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Inventory</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Contact Info -->
+            <div class="footer-contact">
+                <h3>Head Office in Kazakhstan Region</h3>
+                <p>Ulitsa Gagarina, 29</p>
+                <p>Oral West Kazakhstan Region, Kazakhstan</p>
+                <p>Email: <a href="mailto:sales@uralskoblgaz.kz">sales@uralskoblgaz.kz</a></p>
+                <p>Phone: <a href="tel:+77507793667">+77 50 779 36 67</a></p>
+                <p>Fax: +77 (12) 422-00-50</p>
+            </div>
+
+        </div>
+    </footer>
 </div>
  </div>
 <script src="./src/script/active-links.js"></script>
 <script src="./src/script/Slider.js"></script>
     <script src="./src/script/navbar.js"></script>
+    <script>
+        // JavaScript to toggle active class dynamically
+        document.querySelectorAll(".nav-item").forEach(link => {
+            link.addEventListener("click", function() {
+                document.querySelectorAll(".nav-item").forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-item").forEach(link => {
+            link.addEventListener("click", function () {
+                document.querySelectorAll(".nav-item").forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+                navLinks.classList.remove("active"); 
+            });
+        });
+        });
+    </script>
 </body>
 </html>
