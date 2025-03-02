@@ -1,0 +1,246 @@
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2077a7;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+.industry-overview {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.industry-item {
+    margin-bottom: 30px;
+}
+
+.industry-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.industry-description {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #000000;
+}
+
+.industry-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.industry-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .industry-heading {
+        font-size: 18px;
+    }
+
+    .industry-description {
+        font-size: 14px;
+    }
+}
+/* Green Banner - Limited Width */
+.technology-banner {
+    background-color: #2E9E4D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    max-width: 1000px;  /* Limits width */
+    margin: 0 auto; /* Centers the banner */
+    border-radius: 6px;
+}
+
+/* Technology Section - Adjusted Padding */
+.technology-innovation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adjusted padding */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto; /* Space around the section */
+    border-radius: 6px;
+}
+
+/* Image Styling */
+.technology-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Text Content */
+.technology-content {
+    flex: 1;
+}
+
+.technology-content h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.technology-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .technology-innovation {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .technology-image img {
+        max-width: 90%;
+    }
+}
+
+
+/* Press Center Layout */
+.press-center {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+/* Individual Press Items */
+.press-item {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.press-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Overlay Text */
+.press-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.press-overlay h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.press-overlay .date {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.press-overlay .description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* Learn More Button */
+.learn-more {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 14px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .press-center {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .press-item {
+        width: 100%;
+    }
+
+    .press-overlay {
+        width: 80%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .press-overlay h2 {
+        font-size: 18px;
+    }
+
+    .press-overlay .description {
+        font-size: 14px;
+    }
+}

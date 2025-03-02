@@ -1,117 +1,17 @@
-
-/* Main Container */
-.container {
-    max-width: 800px;
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Heading */
-.heading {
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: underline;
-    color: #000;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .heading {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .heading {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-}
-/* Section Layout */
-.refinery-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Image Container */
-.refinery-section .image-container {
-    position: relative;
-    max-width: 600px;
-    width: 100%;
-}
-
-.refinery-section .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-}
-
-/* Overlay Text */
-.refinery-section .text-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    width: 85%;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-/* Header Styling */
-.refinery-section h2 {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-.refinery-section .blue {
-    color: #0F6DB5;
+body {
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
 }
-
-.green {
-    color: #2E8B57;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .refinery-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .refinery-section .text-overlay {
-        position: relative;
-        background: rgba(0, 0, 0, 0.9);
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    .refinery-section h2 {
-        font-size: 22px;
-    }
+body, html{
+    overflow-x: hidden;
 }

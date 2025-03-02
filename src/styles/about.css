@@ -1,0 +1,173 @@
+        /* About Section */
+        .about-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            color: #333;
+
+            border-radius: 10px;
+          
+        }
+
+        .about-section h2 {
+            text-align: center;
+            color: #2077A7;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .about-section h3 {
+            color: #000000;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .about-section p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        /* ✅ Full-Screen Background Image */
+/* ✅ Full width, automatic height */
+.image-container img {
+    width: 100%;
+    height: auto; /* Adjusts height automatically */
+    display: block; /* Removes extra space below the image */
+}
+
+
+.section-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    left: 15%;
+    padding: 10px;
+    background: #323232;
+    color: white;
+    padding: 20px;
+    max-width: 70%;
+    height: 250px;
+    font-size: 14px;
+}
+.text-box p{
+    color: white;
+    font-size: 15px;
+    line-height: 2;
+
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.title span {
+    color: green;
+}
+
+
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 20px;
+    color: #000000;
+}
+
+.content-section h2 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-section  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.content-section  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 10px;
+    }
+
+    .content-section  h2 {
+        font-size: 20px;
+    }
+
+    .content-section  h3 {
+        font-size: 16px;
+    }
+
+    .content-section  p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-box {
+        max-width: 90%;
+        left: 5%;
+        bottom: 10px;
+        font-size: 12px;
+    }
+    
+    .title {
+        font-size: 20px;
+        right: 5%;
+    }
+}
+   /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 20px;
+            }
+
+            .about-section h2 {
+                font-size: 24px;
+            }
+
+            .about-section h3 {
+                font-size: 20px;
+            }
+
+            .about-section p {
+                font-size: 14px;
+            }
+        }
