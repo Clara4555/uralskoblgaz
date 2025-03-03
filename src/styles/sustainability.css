@@ -1,11 +1,3 @@
-/* ✅ Reset Styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-}
-
 /* ✅ Section Styling */
 .sustainability {
     width: 90%;
@@ -70,7 +62,103 @@ body {
     margin: 40px auto;
 }
 
+
+.page-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Text Section */
+.intro-text {
+    max-width: 800px;
+    /* margin: 0 auto 20px; */
+    /* text-align: center; */
+}
+
+.intro-text h2 {
+    color: #2e7d32;
+    font-size: 24px;
+}
+
+.intro-text p {
+    color: #444;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* Layout for Cards & Banner */
+.content-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures equal height */
+    width: 100%;
+    gap: 0;
+    height: 100%; /* Make sure everything is the same height */
+}
+
+/* Fuel Cards */
+.fuel-cards {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    align-items: stretch; /* Stretches to full height */
+}
+
+.card-image {
+    width: 100%;
+    height: 100%; /* Ensures images take full height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+/* Banner */
+.banner-container {
+    width: 50%;
+    height: 100%;
+}
+
+.company-banner {
+    width: 100%;
+    height: 100%; /* Make banner fill height */
+    object-fit: cover; /* Ensures no distortion */
+}
+
+
+
+
+
+
+
 /* ✅ Fully Responsive Adjustments */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fuel-cards {
+        width: 100%;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .banner-container {
+        width: 100%;
+    }
+
+    .company-banner {
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -79,5 +167,26 @@ body {
 
     .text {
         text-align: center;
+    }
+    .text p{
+        font-size: 13px;
+
+    }
+    .text ul li{
+        font-size: 13px;
+
+    }
+    .text h2{
+        font-size: 20px;
+
+    }
+    .fuel-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 50%;
     }
 }

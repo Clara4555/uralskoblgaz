@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab");
-    const contentSections = document.querySelectorAll(".content");
 
-    // Initially hide all sections except the first one
-    contentSections.forEach((section, index) => {
-        if (index !== 0) {
-            section.style.display = "none";
-        }
+    const contentSections = {
+        contenti: document.querySelectorAll(".contenti"),
+        contentii: document.querySelectorAll(".contentii"),
+        contentiii: document.querySelectorAll(".contentiii")
+    };
+
+    // Hide all sections initially
+    Object.values(contentSections).forEach(sections => {
+        sections.forEach(section => section.style.display = "none");
     });
+
+    // Show only the first section by default
+    if (contentSections.contenti.length > 0) {
+        contentSections.contenti[0].style.display = "flex";
+    }
 
     tabs.forEach(tab => {
         tab.addEventListener("click", function () {
@@ -15,14 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
             tabs.forEach(t => t.classList.remove("active"));
             this.classList.add("active");
 
-            // Hide all content sections
-            contentSections.forEach(section => {
-                section.style.display = "none";
+            // Get target section
+            const targetId = this.getAttribute("data-target");
+
+            // Hide all sections
+            Object.values(contentSections).forEach(sections => {
+                sections.forEach(section => section.style.display = "none");
             });
 
             // Show the selected section
-            const target = this.getAttribute("data-target");
-            document.getElementById(target).style.display = "flex";
+            document.getElementById(targetId).style.display = "flex";
         });
     });
 });

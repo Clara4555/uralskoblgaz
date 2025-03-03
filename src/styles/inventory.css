@@ -30,12 +30,7 @@
     border-radius: 8px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 20px;
-    }
-}
+
 
 .industry-overview {
     max-width: 1200px;
@@ -76,16 +71,7 @@
     border-radius: 8px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .industry-heading {
-        font-size: 18px;
-    }
 
-    .industry-description {
-        font-size: 14px;
-    }
-}
 /* Green Banner - Limited Width */
 .technology-banner {
     background-color: #2E9E4D;
@@ -134,27 +120,14 @@
     line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .technology-innovation {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .technology-image img {
-        max-width: 90%;
-    }
-}
 
 
-/* Press Center Layout */
+
+/* Main Container */
 .press-center {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 5px;
-    max-width: 1400px;
-    margin: 40px auto;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
 }
 
 /* Individual Press Items */
@@ -162,32 +135,28 @@
     position: relative;
     width: 50%;
     overflow: hidden;
-    border-radius: 8px;
 }
 
 .press-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: filter 0.3s ease-in-out;
 }
 
-/* Overlay Text */
+/* Overlay for Text */
 .press-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* text-align: center; */
     color: white;
-    text-align: center;
-    width: 90%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    width: 80%;
 }
 
+/* Styling for Text */
 .press-overlay h2 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -200,7 +169,7 @@
 
 .press-overlay .description {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 2;
     margin-bottom: 12px;
 }
 
@@ -219,28 +188,40 @@
     color: black;
 }
 
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+    }
+    .industry-heading {
+        font-size: 18px;
+    }
+
+    .industry-description {
+        font-size: 14px;
+    }
+    .technology-innovation {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .technology-image img {
+        max-width: 90%;
+    }
     .press-center {
         flex-direction: column;
-        gap: 10px;
+        height: auto;
     }
 
     .press-item {
         width: 100%;
+        height: 300px; /* Adjust for mobile */
     }
 
     .press-overlay {
-        width: 80%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .press-overlay h2 {
-        font-size: 18px;
-    }
-
-    .press-overlay .description {
-        font-size: 14px;
+        width: 90%;
     }
 }

@@ -8,16 +8,14 @@
 }
 
 /* ✅ Hero Section - Now Fills the Screen */
-.hero {
+.image-container {
     width: 100%;
-    height: 100vh; /* Full height of viewport */
-    background-image: url('../assets/images/contact.png.crdownload'); /* Ensure correct path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ✅ Ensure Content Below Has Proper Spacing */
